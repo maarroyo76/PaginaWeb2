@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floreria DUOC | Tierra de hojas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Floreria DUOC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Flores.html">Flores y Ramos</a></li>
+                      <li><a class="dropdown-item" href="maceteros.html">Maceteros</a></li>
+                      <li><a class="dropdown-item" href="Tierra.html">Tierra de hojas</a></li>
+                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cuenta.html">Cuenta</a>
+                    </li>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 mr-3">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            <button class="btn btn-primary cart-button" type="button" data-toggle="modal" data-target="#cartModal">
+                <img src="Imagenes/carrito.png" alt="" style="height: 35px; width: 35px;">
+            </button>
+        </div>
+    </nav>
+
+    <!-- Carrito Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Tus productos:</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="media">
+                                <img src="Imagenes/flores2.png"  style="width: 64px; height: 50;">
+                                <div class="media-body" style="margin-left: 20px;">
+                                    Bouquet de Lirios y Rosas x1 $10.000
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-success btn-block">Pagar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Tierra de hoja</h1>
+
+    <!-- Product Cards -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagenes/tierra1.png" class="card-img-top" alt="..." width="200" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Sustrato Plantas Interior Premium 6 Litros Anasac</h5>
+                        <p class="card-text">Descripción del producto.</p>
+                        <div id="accordion1">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            Ver detalles
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordion1">
+                                    <div class="card-body">
+                                        Detalles del producto 1...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 10px;">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagenes/tierra2.png" class="card-img-top" alt="..." width="200" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Tierra de Hoja para Jardín 6 litros saco</h5>
+                        <p class="card-text">Descripción del producto.</p>
+                        <div id="accordion2">
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseTwo"
+                                            aria-expanded="true" aria-controls="collapseTwo">
+                                            Ver detalles
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion2">
+                                    <div class="card-body">
+                                        Detalles del producto 2...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 10px;">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagenes/tierra3.png" class="card-img-top" alt="..." width="200" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Tierra de Hoja Reforzada y Desinfectada de 40 Litros</h5>
+                        <p class="card-text">Descripción del producto.</p>
+                        <div id="accordion3">
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="true" aria-controls="collapseThree">
+                                            Ver detalles
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion3">
+                                    <div class="card-body">
+                                        Detalles del producto 3...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 10px;">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagenes/tierra4.png" class="card-img-top" alt="..." width="200" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Tierra de hoja 50 litros Roots</h5>
+                        <p class="card-text">Descripción del producto.</p>
+                        <div id="accordion4">
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseFour"
+                                            aria-expanded="true" aria-controls="collapseFour">
+                                            Ver detalles
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordion4">
+                                    <div class="card-body">
+                                        Detalles del producto 4...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 10px;">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagenes/tierra5.png" class="card-img-top" alt="..." width="200" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Tierra De Hojas Ecológica 50 Litros</h5>
+                        <p class="card-text">Descripción del producto.</p>
+                        <div id="accordion5">
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseFive"
+                                            aria-expanded="true" aria-controls="collapseFive">
+                                            Ver detalles
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                    data-parent="#accordion5">
+                                    <div class="card-body">
+                                        Detalles del producto 5...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 10px;">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagenes/tierra6.png" class="card-img-top" alt="..." width="200" height="300">
+                    <div class="card-body">
+                        <h5 class="card-title">Tierra de hojas 40 litros Armony</h5>
+                        <p class="card-text">Descripción del producto.</p>
+                        <div id="accordion6">
+                            <div class="card">
+                                <div class="card-header" id="headingSix">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseSix"
+                                            aria-expanded="true" aria-controls="collapseSix">
+                                            Ver detalles
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                    data-parent="#accordion6">
+                                    <div class="card-body">
+                                        Detalles del producto 6...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" style="margin-top: 10px;">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="Index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="Flores.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="Maceteros.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="Tierra.html">4</a></li>
+        </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start ">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Floreria DUOC
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
